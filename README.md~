@@ -1,4 +1,4 @@
-≈# JavaScript-Practice
+# JavaScript-Practice
 
 Document Object Model (DOM)
 1. Character
@@ -49,24 +49,3 @@ Add new page content
   <!-- beforeend -->
 </p>
 <!-- afterend -->
-
-
----------------------------------
-.addEventListener()
---------------------------------
-
-<event-target>.addEventListener(<event-to-listen-for>, <function-to-run-when-an-event-happens>);
-
-1. an event target - the target
-2. the type of event to listen for - the type
-3. a function to run when the event occurs - the listener
-
-
---------------------------------
-Phases of an event
---------------------------------
-1. capturing phase
-2. at target phase
-3. bubbling phase
-
-During the capturing phase the code is run line by line (Top to bottom). Once it arrives at the target. It stops and starts the bubbling phase returning to the top.

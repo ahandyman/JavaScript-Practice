@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <title>‹Bootstrap Tuts›</title>
+  <style>
+    .jumbotron {
+      background-color: #2e2d88;
+      color: white;
+    }
+
+    .tab-content {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    .nav-tabs {
+      margin-bottom: 0;
+    }
+    .color_col_1 {
+      background-color:lightblue;
+    }
+    .color_col_2{
+      background-color:blue;
+    }
+    .color_col_3{
+      background-color:lightgreen;
+    }
+    .color_col_4{
+      background-color:lightblue;
+    }
+    .disappear{
+      display:none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>If your not first your last</h1>
+  <div class="container disappear">
+    <div class="well invisible-sm hidden-md hidden-lg">
+      <p>Screen &lt; 768px</p>
+    </div>
+    <div class="well hidden-md hidden-lg">
+      <p>Screen &gt;=768px and &lt; 992ps</p>
+    </div>
+    <div class="well hidden-lg">
+      <p>Screen &gt;=992px and &lt; 1200px</p>
+    </div>
+    <div class="well">
+      <p>Screen &gt; 1200px</p>
+    </div>
+  </div>
+  <div class="d-flex flex-wrap">
+    <div class="d-flex text-white bg-info order-2">
+      <div class="p-2 flex-grow-1">ramon</div>
+    </div>
+    <!-- Flex - Grow -->
+    <div class="d-flex text-white">
+      <div class="p-2 flex-grow-1 bg-primary">First Flex item 1</div>
+      <div class="p-2 bg-success">Second Flex item 2</div>
+      <div class="p-2 bg-primary">Third flex item 3</div>
+    </div>
+
+    <div class="d-flex text-white mt-1 order-1">
+      <div class="p-2 flex-sm-grow-1 bg-danger">FIRST Flex item</div>
+      <div class="p-2 flex-md-grow-1 bg-warning">SECOND Flex item</div>
+      <div class="p-2 flex-lg-grow-1 bg-danger">THIRD Flex item</div>
+      <div class="p-2 flex-xl-grow-1 bg-warning">FOURTH Flex item</div>
+    </div>
+  </div>
+  <div class="container disappear">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 color_col_1">
+        <h2>Column1</h2>
+        <p>One hundred dollars. Oh yeah, good luck with that. Yep, I remember. They came in last at the Olympics, then retired to promote alcoholic beverages! I don't want to be rescued. I'm just glad my fat, ugly mama isn't alive to see this day.</p>
+        <p>You've killed me! Oh, you've killed me!</p>
+        <ol>
+          <li>I guess because my parents keep telling me to be more ladylike. As though!</li>
+          <li>Also Zoidberg.</li>
+          <li>And when we woke up, we had these bodies.</li>
+          <li>I keep telling you we didn't grow up together.</li>
+        </ol>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 color_col_2">
+        <h2>Column2</h2>
+        <p>One hundred dollars. Oh yeah, good luck with that. Yep, I remember. They came in last at the Olympics, then retired to promote alcoholic beverages! I don't want to be rescued. I'm just glad my fat, ugly mama isn't alive to see this day.</p>
+        <ol>
+          <li>I guess because my parents keep telling me to be more ladylike. As though!</li>
+          <li>Also Zoidberg.</li>
+          <li>And when we woke up, we had these bodies.</li>
+        </ol>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 color_col_3">
+        <h2>Column3</h2>
+        <p>One hundred dollars. Oh yeah, good luck with that. Yep, I remember. They came in last at the Olympics, then retired to promote alcoholic beverages! I don't want to be rescued. I'm just glad my fat, ugly mama isn't alive to see this day.</p>
+        <ol>
+          <li>I guess because my parents keep telling me to be more ladylike. As though!</li>
+          <li>Also Zoidberg.</li>
+          <li>And when we woke up, we had these bodies.</li>
+        </ol>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 color_col_4">
+        <h2>Column4</h2>
+        <p>One hundred dollars. Oh yeah, good luck with that. Yep, I remember. They came in last at the Olympics, then retired to promote alcoholic beverages! I don't want to be rescued. I'm just glad my fat, ugly mama isn't alive to see this day.</p>
+        <ol>
+          <li>I guess because my parents keep telling me to be more ladylike. As though!</li>
+          <li>Also Zoidberg.</li>
+          <li>And when we woke up, we had these bodies.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="container disappear">
+    <div class="page-header">
+      <h1>Bootstrap Tutorial</h1>
+    </div>
+    <div class="jumbotron">
+      <p>Bender, I didn't know you liked cooking. That's so cute. No, of course not. It was… uh… porno. Yeah, that's it. </p>
+      <p>
+        <a href="#" class="btn btn-outline-info btn-lg" role="button">More Info</a>
+        <a href="#" class="btn btn-outline-dark btn-lg" role="button">AND More Info</a>
+        <button type="button" class="btn btn-outline-light">Default</button>
+        <a href="#" class="btn btn-info" role="button">Link Button</a>
+        <button type="submit" class="btn btn-danger">Button</button>
+        <input type="button" value="Info" class="btn btn-info">
+        <button type=submit class="btn btn-primary btn-sm">Primary</button>
+        <button type="submit" class="btn btn-success btn-xs"> Succes</button>
+        <button type="submit" class="btn btn-warning btn-lg">Warning</button>
+        <button type="submit" class="btn btn-link btn-lg">Link</button>
+        <div class="btn-group btn-group-lg" role="group">
+          <button type="button" class="btn btn-outline-light">Small</button>
+          <button type="button" class="btn btn-outline-light">Medium</button>
+          <button type="button" class="btn btn-outline-light">Large</button>
+        </div>
+      </p>
+    </div>
+
+  </div>
+  <div class="article">
+    <p>hello</p>
+  </div>
+  <div class="article">
+    <p>good afternoon</p>
+  </div>
+  <div class="article">
+    <p>good bye</p>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
